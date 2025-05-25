@@ -74,12 +74,24 @@
     .services ul {
       list-style: none;
       padding: 0;
-      margin-bottom: 40px;
+      margin: 0 auto 40px auto;
+      max-width: 800px;
+      text-align: left;
     }
-
+    
     .services li {
-      margin: 10px 0;
       font-size: 18px;
+      margin: 8px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .services li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #1e90ff;
+      font-weight: bold;
     }
 
     .service-boxes {
@@ -158,16 +170,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Top navigation with logo -->
-  <div class="top-strip">
-    <img src="assets/logo3.png" alt="Logo">
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contact">Contacto</a>
-    </nav>
-  </div>
 
   <!-- Main hero section -->
   <section class="main-section">
