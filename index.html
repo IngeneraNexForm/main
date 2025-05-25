@@ -3,135 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Servicios Digitales</title>
+  <title>Servicios Profesionales</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
+      background-color: #0b0c2a;
     }
 
-    /* Franja en blanco superior con logo */
     .top-strip {
-      background-color: #ffffff;
+      background-color: #fff;
       height: 60px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      padding: 0 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      justify-content: space-between;
+      padding: 0 40px;
     }
 
     .top-strip img {
       height: 40px;
     }
 
-    /* Sección principal con fondo tecnológico */
-    .main-section {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-blend-mode: overlay;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .main-section h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-
-    .main-section ul {
-      list-style: none;
-      padding: 0;
-      font-size: 18px;
-    }
-
-    .main-section ul li {
-      margin: 10px 0;
-    }
-
-    /* Sección de contacto */
-    .contact-section {
-      background-color: #f4f4f4;
+    .top-strip nav a {
       color: #333;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .contact-section h2 {
-      margin-bottom: 30px;
-    }
-
-    .contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    .contact-form label {
-      display: block;
-      margin-bottom: 5px;
+      margin-left: 20px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
+    .main-section {
+      background: url('https://img.freepik.com/free-vector/gradient-technology-background_23-2148884155.jpg') no-repeat center;
+      background-size: cover;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .main-section h1 {
+      font-size: 42px;
       margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: inherit;
     }
 
-    .contact-form button {
-      background-color: #2c5364;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
+    .main-section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 60px 0;
+      gap: 20px;
+    }
+
+    .service-box {
+      background: white;
+      color: #222;
+      width: 220px;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-box img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-box h3 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 30px;
       font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 40px;
+      transition: background 0.3s ease;
     }
 
-    .contact-form button:hover {
-      background-color: #1f3a48;
+    .btn-contact:hover {
+      background-color: #0d6efd;
+    }
+
+    .footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
   <div class="top-strip">
-    <img src="assets/logo3.png" alt="Logo de la empresa">
+    <img src="assets/logo3.png" alt="Logo">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
   </div>
 
   <section class="main-section">
-    <h1>Soluciones hechas a medida para digitalizar y automatizar tu negocio.</h1>
-    <ul>
-      <li>Automatización de procesos administrativos</li>
-      <li>Desarrollo con Power Apps, Power Automate y Power BI</li>
-      <li>Integraciones con SharePoint y RPA</li>
-      <li>Creación de herramientas con Python y Visual Studio</li>
-      <li>Dashboards interactivos y generación de reportes</li>
-    </ul>
+    <h1>Professional Web Development Services</h1>
+    <p>Somos una agencia digital confiable y asequible. Canalizamos creatividad, colores, texto y código para ayudar a nuestros clientes a mejorar su marca.</p>
+    
+    <div class="services">
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/branding.png" alt="Branding">
+        <h3>BRANDING</h3>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/medal.png" alt="Quality">
+        <h3>QUALITY</h3>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/design.png" alt="Design">
+        <h3>DESIGN</h3>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/paper-plane.png" alt="Creativity">
+        <h3>CREATIVITY</h3>
+      </div>
+    </div>
+
+    <a class="btn-contact" href="#contact">Contacta con nosotros</a>
   </section>
 
-  <section class="contact-section">
-    <h2>Contacto</h2>
-    <form class="contact-form" action="mailto:tuemail@example.com" method="POST" enctype="text/plain">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+  <div class="footer">
+    Imagen de fondo de <a href="https://www.freepik.com/free-vector/gradient-technology-background_13179967.htm" style="color: #66f;">Freepik</a>
+  </div>
 
 </body>
 </html>
