@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingenera | NextForm Solutions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0e2f44;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0e2f44;
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .services li::before {
+      content: "\2713";
+      margin-right: 0.5rem;
+      color: #0e2f44;
+    }
+    footer {
+      background: #0e2f44;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ingenera</h1>
+    <p>NextForm Solutions for your business</p>
+    <p><em>"Soluciones hechas a medida para digitalizar y automatizar tu negocio."</em></p>
+  </header>
+
+  <section class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Automatización de procesos administrativos</li>
+      <li>Desarrollo con Power Apps, Power Automate y Power BI</li>
+      <li>Integraciones con SharePoint y RPA</li>
+      <li>Creación de herramientas con Python y Visual Studio</li>
+      <li>Dashboards interactivos y generación de reportes</li>
+    </ul>
+  </section>
+
+  <section class="project">
+    <h2>Proyecto destacado: APP TOOL V3</h2>
+    <p>Aplicación para generación de cotizaciones y propuestas económicas basada en una base de datos de productos. Optimiza el proceso comercial y ahorra tiempo al generar documentos automáticamente.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:ingeneranextform@gmail.com">ingeneranextform@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/88888888">+88888888</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ingenera | NextForm Solutions</p>
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/88888888" target="_blank">&#x2709;</a>
+</body>
+</html>
