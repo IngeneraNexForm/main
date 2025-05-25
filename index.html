@@ -1,119 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingenera | NextForm Solutions</title>
-
-  <!-- Google Fonts & Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e0e6c6cc.js" crossorigin="anonymous"></script>
-
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background-color: #0e2f44;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: #0e2f44;
+      color: white;
+      padding: 2rem;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     header img {
-      height: 70px;
-    }
-
-    nav {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #25d366;
+      height: 80px;
+      width: auto;
     }
 
     .header-text {
-      flex: 1 1 300px;
-      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
     }
 
     .header-text h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
     }
 
     .header-text p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0 0;
     }
 
     section {
-      padding: 3rem 1rem;
+      padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
 
     h2 {
       color: #0e2f44;
-      margin-bottom: 1rem;
-      font-size: 2rem;
     }
 
     .services ul {
       list-style: none;
-      padding-left: 0;
-    }
-
-    .services li {
-      margin-bottom: 0.5rem;
-      padding-left: 1.5rem;
-      position: relative;
+      padding-left: 1rem;
     }
 
     .services li::before {
-      content: "\f00c";
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
+      content: "\2713";
+      margin-right: 0.5rem;
       color: #0e2f44;
-      position: absolute;
-      left: 0;
-      top: 0.2rem;
     }
 
     .cta-button {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
       background-color: #0e2f44;
       color: white;
       padding: 1rem 2rem;
-      border-radius: 5px;
-      text-decoration: none;
       font-size: 1.2rem;
-      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
       transition: background 0.3s ease;
-      text-align: center;
-      margin: 2rem auto;
     }
 
     .cta-button:hover {
@@ -124,22 +86,21 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
 
     input, textarea {
-      padding: 0.9rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 0.8rem;
       font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
 
     input[type="submit"] {
       background-color: #0e2f44;
       color: white;
-      font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
 
     input[type="submit"]:hover {
@@ -147,11 +108,10 @@
     }
 
     footer {
-      background-color: #0e2f44;
+      background: #0e2f44;
       color: white;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
     }
 
     .whatsapp-button {
@@ -167,44 +127,34 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      font-size: 28px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
     }
 
-    @media (max-width: 768px) {
+    /* Responsivo para pantallas pequeñas */
+    @media (max-width: 600px) {
       header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
       }
 
-      nav {
-        justify-content: center;
-        margin-top: 1rem;
-      }
-
       .header-text {
-        margin-top: 1rem;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="assets/logo2.png" alt="Logo de Ingenera" />
+    <img src="assets/logo2.png" alt="Logo de Ingenera - NextForm Solutions">
     <div class="header-text">
       <h1>Ingenera</h1>
       <p>NextForm Solutions for your business</p>
       <p><em>"Soluciones hechas a medida para digitalizar y automatizar tu negocio."</em></p>
     </div>
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyecto">Proyecto</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
   </header>
 
-  <section class="services" id="servicios">
+  <section class="services">
     <h2>Servicios</h2>
     <ul>
       <li>Automatización de procesos administrativos</li>
@@ -217,15 +167,15 @@
 
   <a href="#contacto" class="cta-button">Solicita tu propuesta hoy</a>
 
-  <section id="proyecto">
+  <section class="project">
     <h2>Proyecto destacado: APP TOOL V3</h2>
     <p>Aplicación para generación de cotizaciones y propuestas económicas basada en una base de datos de productos. Optimiza el proceso comercial y ahorra tiempo al generar documentos automáticamente.</p>
   </section>
 
   <section class="contact" id="contacto">
     <h2>Contacto</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:ingeneranextform@gmail.com">ingeneranextform@gmail.com</a></p>
-    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/88888888" target="_blank">+88888888</a></p>
+    <p>Email: <a href="mailto:ingeneranextform@gmail.com">ingeneranextform@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/88888888">+88888888</a></p>
     <form action="https://formspree.io/f/mnqeynjd" method="POST">
       <input type="text" name="name" placeholder="Tu nombre" required>
       <input type="email" name="email" placeholder="Tu correo electrónico" required>
@@ -235,10 +185,9 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Ingenera | NextForm Solutions. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Ingenera | NextForm Solutions</p>
   </footer>
 
-  <a class="whatsapp-button" href="https://wa.me/88888888" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
+  <a class="whatsapp-button" href="https://wa.me/88888888" target="_blank">&#x2709;</a>
 </body>
 </html>
