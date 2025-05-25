@@ -11,29 +11,19 @@
       color: #fff;
       background-color: #0b0c2a;
     }
-    /* Franja en blanco superior */
+
+    /* Franja superior blanca con logo a la derecha */
     .top-strip {
       background-color: #ffffff;
       height: 60px;
-    }
-    .top-strip {
-      background-color: #fff;
-      height: 60px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding: 0 40px;
     }
 
     .top-strip img {
       height: 40px;
-    }
-
-    .top-strip nav a {
-      color: #333;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
     }
 
     .main-section {
@@ -174,6 +164,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Franja blanca superior con logo a la derecha -->
+  <div class="top-strip">
+    <img src="assets/logo3.png" alt="Logo">
+  </div>
 
   <!-- Main hero section -->
   <section class="main-section">
