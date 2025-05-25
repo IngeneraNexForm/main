@@ -11,10 +11,19 @@
       color: #fff;
     }
 
-    /* Franja en blanco superior */
+    /* Franja en blanco superior con logo */
     .top-strip {
       background-color: #ffffff;
       height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-strip img {
+      height: 40px;
     }
 
     /* Sección principal con fondo tecnológico */
@@ -93,7 +102,9 @@
 </head>
 <body>
 
-  <div class="top-strip"></div>
+  <div class="top-strip">
+    <img src="assets/logo3.png" alt="Logo de la empresa">
+  </div>
 
   <section class="main-section">
     <h1>Soluciones hechas a medida para digitalizar y automatizar tu negocio.</h1>
