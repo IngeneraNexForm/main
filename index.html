@@ -16,19 +16,25 @@
       background: #0e2f44;
       color: white;
       padding: 2rem;
-      text-align: center;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
     }
     header img {
       height: 100px;
-      margin-bottom: 1rem;
     }
-    header h1 {
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .header-text h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    header p {
+    .header-text p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      margin: 0.5rem 0 0 0;
     }
     section {
       padding: 2rem;
@@ -109,9 +115,11 @@
 <body>
   <header>
     <img src="assets/logo2.png" alt="Logo Ingenera">
-    <h1>Ingenera</h1>
-    <p>NextForm Solutions for your business</p>
-    <p><em>"Soluciones hechas a medida para digitalizar y automatizar tu negocio."</em></p>
+    <div class="header-text">
+      <h1>Ingenera</h1>
+      <p>NextForm Solutions for your business</p>
+      <p><em>"Soluciones hechas a medida para digitalizar y automatizar tu negocio."</em></p>
+    </div>
   </header>
 
   <section class="services">
