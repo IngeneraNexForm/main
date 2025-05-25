@@ -12,48 +12,59 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background: #0e2f44;
       color: white;
       padding: 2rem;
-      text-align: left;
       display: flex;
       align-items: center;
-      gap: 2rem;
       justify-content: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
+
     header img {
-      height: 100px;
+      height: 80px;
+      width: auto;
     }
+
     .header-text {
       display: flex;
       flex-direction: column;
     }
+
     .header-text h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     .header-text p {
       font-size: 1.2rem;
       margin: 0.5rem 0 0 0;
     }
+
     section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       color: #0e2f44;
     }
+
     .services ul {
       list-style: none;
       padding-left: 1rem;
     }
+
     .services li::before {
       content: "\2713";
       margin-right: 0.5rem;
       color: #0e2f44;
     }
+
     .cta-button {
       display: block;
       width: fit-content;
@@ -66,36 +77,43 @@
       border-radius: 5px;
       transition: background 0.3s ease;
     }
+
     .cta-button:hover {
       background-color: #14577a;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       margin-top: 1rem;
     }
+
     input, textarea {
       padding: 0.8rem;
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     input[type="submit"] {
       background-color: #0e2f44;
       color: white;
       cursor: pointer;
       transition: background 0.3s ease;
     }
+
     input[type="submit"]:hover {
       background-color: #14577a;
     }
+
     footer {
       background: #0e2f44;
       color: white;
       text-align: center;
       padding: 1rem;
     }
+
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
@@ -111,11 +129,24 @@
       text-decoration: none;
       font-size: 30px;
     }
+
+    /* Responsivo para pantallas pequeñas */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-text {
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo2.png" alt="Logo Ingenera">
+    <img src="assets/logo2.png" alt="Logo de Ingenera - NextForm Solutions">
     <div class="header-text">
       <h1>Ingenera</h1>
       <p>NextForm Solutions for your business</p>
